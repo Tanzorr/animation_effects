@@ -1,0 +1,44 @@
+.colab_slider {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+}
+
+.colab_slider h3 {
+    text-transform: uppercase;
+    color: #FFC306;
+    font-size: 80px;
+    font-weight: 400;
+    /*display: inline-block;*/
+    /*padding-left: 100%;*/
+    /*animation: marquee 15s linear infinite;*/
+
+}
+
+
+/*.marquee {*/
+/*    width: 450px;*/
+/*    margin: 0 auto;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    box-sizing: border-box;*/
+/*    border: 1px dotted #800000;*/
+/*}*/
+
+/*.marquee span {*/
+/*    display: inline-block;*/
+/*    padding-left: 100%;*/
+/*    animation: marquee 15s linear infinite;*/
+/*}*/
+
+/*.marquee span:hover {*/
+/*    animation-play-state: paused*/
+/*}*/
+
+/*@keyframes marquee {*/
+/*    0%   { transform: translate(0, 0); }*/
+/*    100% { transform: translate(-100%, 0); }*/
+/*}*/
