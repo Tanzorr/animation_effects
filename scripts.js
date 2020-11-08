@@ -107,12 +107,30 @@ Slider object
      }
  }
 
- var sleder = new Slider('mySlides','dot')
+ var slider = new Slider('mySlides','dot')
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');
 
-prev.addEventListener('click', ()=>{ sleder.plussSlide(-1)}, false)
-next.addEventListener('click', ()=>{sleder.plussSlide(1)}, false)
+prev.addEventListener('click', ()=>{ slider.plussSlide(-1)}, false)
+next.addEventListener('click', ()=>{slider.plussSlide(1)}, false)
+
+var slider2 = new Slider('mySlides2','dot2');
+let ind= 1;
+
+
+var dots = document.querySelectorAll('dot2');
+var interval = setInterval(function (){
+     ind = ind+1;
+    //slider2.currentSlide(ind)
+    console.log(ind);
+    if(ind>dots.length){
+        ind = 1;
+    }
+},1000)
+
+for (var i=1; i<dots.length+1; i++ ){
+        dots[i].addEventListener('click', ()=>{slider2.currentSlide(i), clearInterval(interval)}, false)
+    }
 
 /*
 end Slider objet
